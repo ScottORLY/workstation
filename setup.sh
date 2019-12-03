@@ -8,6 +8,8 @@ brew install watch
 brew install node
 brew install appium
 brew install python
+brew cask install rectangle
+
 rm -rf ~/.bash_it
 export BASH_IT="$HOME/.bash_it"
 git clone https://github.com/Bash-it/bash-it.git ~/.bash_it
