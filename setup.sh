@@ -6,9 +6,6 @@ brew install coreutils
 brew install rbenv
 brew install watch
 brew install node
-brew install appium
-brew install python
-brew cask install rectangle
 
 rm -rf ~/.bash_it
 export BASH_IT="$HOME/.bash_it"
@@ -22,10 +19,8 @@ bash-it enable plugin ssh
 bash-it enable plugin rbenv
 bash-it enable completion ssh
 
-if [ ! -d ~/.vim ]; then
-    git clone https://github.com/pivotal/vim-config.git ~/.vim
-    ~/.vim/bin/install
-fi
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 git config --global alias.gst git status
 git config --global alias.st status
